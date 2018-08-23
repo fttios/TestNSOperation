@@ -13,6 +13,8 @@
 		F83CC972212D542E002A753F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83CC971212D542E002A753F /* Assets.xcassets */; };
 		F83CC975212D542E002A753F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F83CC973212D542E002A753F /* LaunchScreen.storyboard */; };
 		F83CC978212D542E002A753F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F83CC977212D542E002A753F /* main.m */; };
+		F8574E71212E523000029A1D /* TFSerialOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8574E70212E523000029A1D /* TFSerialOperation.m */; };
+		F8574E74212E55AF00029A1D /* TFConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8574E73212E55AF00029A1D /* TFConcurrentOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		F83CC974212D542E002A753F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F83CC976212D542E002A753F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F83CC977212D542E002A753F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8574E6F212E523000029A1D /* TFSerialOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFSerialOperation.h; sourceTree = "<group>"; };
+		F8574E70212E523000029A1D /* TFSerialOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFSerialOperation.m; sourceTree = "<group>"; };
+		F8574E72212E55AF00029A1D /* TFConcurrentOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFConcurrentOperation.h; sourceTree = "<group>"; };
+		F8574E73212E55AF00029A1D /* TFConcurrentOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFConcurrentOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 				F83CC969212D542A002A753F /* AppDelegate.m */,
 				F83CC96B212D542A002A753F /* ViewController.h */,
 				F83CC96C212D542A002A753F /* ViewController.m */,
+				F8574E6E212E51FA00029A1D /* Operation子类 */,
 				F83CC96E212D542A002A753F /* Main.storyboard */,
 				F83CC971212D542E002A753F /* Assets.xcassets */,
 				F83CC973212D542E002A753F /* LaunchScreen.storyboard */,
@@ -69,6 +76,17 @@
 				F83CC977212D542E002A753F /* main.m */,
 			);
 			path = TestNSOperation;
+			sourceTree = "<group>";
+		};
+		F8574E6E212E51FA00029A1D /* Operation子类 */ = {
+			isa = PBXGroup;
+			children = (
+				F8574E6F212E523000029A1D /* TFSerialOperation.h */,
+				F8574E70212E523000029A1D /* TFSerialOperation.m */,
+				F8574E72212E55AF00029A1D /* TFConcurrentOperation.h */,
+				F8574E73212E55AF00029A1D /* TFConcurrentOperation.m */,
+			);
+			path = "Operation子类";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83CC96D212D542A002A753F /* ViewController.m in Sources */,
+				F8574E71212E523000029A1D /* TFSerialOperation.m in Sources */,
+				F8574E74212E55AF00029A1D /* TFConcurrentOperation.m in Sources */,
 				F83CC978212D542E002A753F /* main.m in Sources */,
 				F83CC96A212D542A002A753F /* AppDelegate.m in Sources */,
 			);
